@@ -11,7 +11,7 @@ jobs:
             run: python hello.py
     build:
         name: Build
-        depends: [test]
+        needs: [test]
         runs-on: ubuntu-latest
         steps:
           - name: Checkout
